@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Local CSS -->
+	<link rel="Stylesheet" href="main.css">
+	<!-- favicon -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <title> Vanadium Websites | Kontakt </title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Holtwood+One+SC|Italiana|Paytone+One|Vesper+Libre|Fanwood+Text" rel="stylesheet" type='text/css'>  
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+	
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	
+	
+	<script>
+	(function ($) {
+	  $(document).ready(function(){
+		
+		// hide .navbar first
+		$("#navbar").hide();
+		
+		// fade in .navbar
+		$(function () {
+			$(window).scroll(function () {
+				// set distance user needs to scroll before we fadeIn navbar
+				if ($(this).scrollTop() > 100) {
+					$('#navbar').fadeIn();
+					
+				} else {
+					$('#navbar').fadeOut();
+				}
+			});
+
+		
+		});
+
+	});
+	  }(jQuery));  
+	 </script>
+	 
+	 </head>
+  
+  <body>
+  
+    <!-- Image and text -->
+<script src="js/three.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/ShelfConstructor.js"></script>
+
+
+
+
+
+
+<div class="container" id="canvas"></div>
+
+<div class="container canvas_table bg-light">
+	<table class="table table-bordered table-light">
+			 <thead>
+				<tr>
+				  <th scope="col">Cabinet #1</th>
+				  <th scope="col">Cabinet #2</th>
+				  <th scope="col">Cabinet #3</th>
+				  <th scope="col">Cabinet #4</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				 <td><center><input Type="checkbox" id="Cabinet0" name="Cabinets"> </center></td>
+				 <td><center><input Type="checkbox" id="Cabinet1" name="Cabinets"> </center></td>
+				 <td><center><input Type="checkbox" id="Cabinet2" name="Cabinets"> </center></td>
+				 <td><center><input Type="checkbox" id="Cabinet3" name="Cabinets"> </center></td>
+				</tr>
+				<tr>
+				  <td>Shelfs: <input Type="number" id="Shelf0" name="Shelfs"  value="0" min="2" max="100"> </td>
+				  <td>Shelfs: <input Type="number" id="Shelf1" name="Shelfs"  value="0" min="2" max="100"> </td>
+				  <td>Shelfs: <input Type="number" id="Shelf2" name="Shelfs"  value="0" min="2" max="100"> </td>
+				  <td>Shelfs: <input Type="number" id="Shelf3" name="Shelfs"  value="0" min="2" max="100"> </td>
+				</tr>
+				<tr>
+				  <td>Height: <input Type="number" id="Height0" value="0" name="Heights"> </td>
+				  <td>Height: <input Type="number" id="Height1" value="0" name="Heights"> </td>
+				  <td>Height: <input Type="number" id="Height2" value="0" name="Heights"> </td>
+				  <td>Height: <input Type="number" id="Height3" value="0" name="Heights"> </td>
+				</tr>
+				<tr>
+				  <td>Width: <input Type="number" id="Width0" value="0" name="Widths"> </td>
+				  <td>Width: <input Type="number" id="Width1" value="0" name="Widths"> </td>
+				  <td>Width: <input Type="number" id="Width2" value="0" name="Widths"> </td>
+				  <td>Width: <input Type="number" id="Width3" value="0" name="Widths"> </td>
+				</tr>
+				
+			</tbody>
+			
+
+
+
+	</table>
+	
+	<center> <button onclick="main()">Submit</button> </center>
+</div>
+
+
+
+<footer class="footer border-top text-center">	
+		
+		 ©2018 Copyright: Jakub Załucki
+
+	
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+
+
+	
+	
+  </body>
+</html>
