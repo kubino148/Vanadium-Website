@@ -1,2 +1,2 @@
-# vanadium
-Moja strona na PP4, Frontend Bootstrap.
+# Vanadium
+Strona html+css+JS+Boootstrap zrobiona w ramach projektu na studia
